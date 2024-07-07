@@ -16,7 +16,7 @@ function preload(){
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
-  player = new Susanoo(img,rgb(255,255,255));
+  player = new Susanoo(img,rgb(255,0,255));
 }
 
 function draw(){
