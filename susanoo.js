@@ -25,12 +25,12 @@ class Susanoo{
         this.player.b.x = this.player.a.x+50*mir*this.player.b.scale + cos(rot)*200*mir*this.player.b.scale;
         this.player.c.y = this.player.a.y-10*mir - sin(-rot)*100*mir;
         this.player.c.x = this.player.a.x-10*mir - cos(-rot)*100*mir;
-        if (keyDown(DOWN_ARROW)){
+        if (keyDown(UP_ARROW)){
             rot+=5;
             this.player.b.mirrorY(1);
             this.player.c.mirrorY(1);
         };
-        if (keyDown(UP_ARROW)){
+        if (keyDown(DOWN_ARROW)){
             rot-=5;
             this.player.b.mirrorY(-1);
             this.player.c.mirrorY(-1);
